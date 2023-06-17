@@ -1,27 +1,39 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
-}
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
+.frm-main-search {
+    display: block;
+    position: relative;
+    line-height: 1;
+    &:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: url(../img/icons/search.svg) center no-repeat;
+        background-size: 100% auto;
+        top: 50%;
+        left: 11px;
+        margin-top: -10px;
+        z-index: 2;
+        pointer-events: none;
+    }
+    .form-input {
+        height: 46px;
+        border-radius: var(--main-radius);
+        border: none;
+        background: var(--clr-bg-light);
+        padding: 0 10px 0 45px;
+        font-size: 16px;
+        color: var(--clr-base);
+        font-weight: 400;
+        text-align: left;
+    }
+    [placeholder]::-webkit-input-placeholder {color: #b1b1b1;}
+    [placeholder]:-moz-placeholder {color: #b1b1b1;}
+    [placeholder]::-moz-placeholder {color: #b1b1b1;}
+    [placeholder]:-ms-input-placeholder {color: #b1b1b1;}
 }
 .frm-row,
 .frm-field,
@@ -30,6 +42,14 @@ input[type="submit"] {
     flex-wrap: wrap;
 	position: relative;
 	line-height: 1;
+}
+.frm-row {
+    margin: 0 -8px;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+    padding: 0 8px;
 }
 .frm-select {
 	position: relative;
