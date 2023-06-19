@@ -62,6 +62,8 @@ $(document).ready(function(){
             adaptiveHeight: true,
             rows: 1,
             swipeToSlide: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-second ico-arrow-prev"></span>',
             nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-second ico-arrow-next"></span>',
             responsive: [
