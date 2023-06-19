@@ -339,6 +339,7 @@ html {
         width: 100%;
     }
 }
+
 @media (max-width: 1899px) {
     .header-top-panel {
         .user-wrap {
@@ -531,8 +532,8 @@ html {
             flex: 1;
             padding: 0 50px 0 20px;
             .menu {
-                font-size: 16px;
-                line-height: 40px;
+                font-size: 14px;
+                line-height: 34px;
                 color: var(--clr-base);
                 text-transform: uppercase;
                 font-weight: 500;
@@ -545,7 +546,7 @@ html {
                 a {
                     display: block;
                     position: relative;
-                    padding: 0 14px;
+                    padding: 0 10px;
                     color: inherit;
                     white-space: nowrap;
                     &.active {
@@ -572,6 +573,18 @@ html {
                     }
                 }
             }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .header-main-panel {
+        .logo-wrap {
+            width: 120px;
+        }
+    }
+    .popup-menu-wrap {
+        .search-wrap {
+            width: 200px;
         }
     }
 }
